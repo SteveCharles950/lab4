@@ -1,0 +1,27 @@
+
+body {
+    width: 62.5%;                  /* changed from 960px */
+    max-width: 600px;           /* maximum width of page */
+    margin: 0 auto;
+    border: 2px solid black; }
+header {
+    width: 100%;    
+    max-width:960px ;          /* 930 ÷ 960 x 100 */
+    padding: 15px 1.5625%;       /* 15 ÷ 960 x 100 */
+    border-bottom: 2px solid black; }
+main {
+    width: 59.375%;              /* 570 ÷ 960 x 100 */             
+    padding: 15px 1.5625%;       /* 15 ÷ 960 x 100 */
+    float: left; }
+aside {
+    width: 37.5%;  
+    max-width: 360px;            /* 330 ÷ 960 x 100 */
+    padding: 15px 1.5625%;       /* 15 ÷ 960 x 100 */
+    float: right; }
+footer {
+    clear: both;
+    max-width: 960px;
+    width: 100%;              /* 930 ÷ 960 x 100 */
+    padding: 15px 1.5625%;       /* 15 ÷ 960 x 100 */
+    border-top: 2px solid black; }
+    */

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+Instructions for the lab:
+_______________________________________________________________________________
+1. Add all of your code to this file, index.html. 
+2. There are a few css properties in this file. Leave them there. Use the css in 
+   Chapter 8, on page 289 to create a column layout with a header, main, aside 
+   and footer section.
+3. In the header, display the image. Next to the image, add a span element with
+   class="title". Add content to display your name.
+4. In the main section, add the following subtitles: Objectives, Courses 
+   Completed, Hobbies, and Favorite Books.
+5. Under the Objectives subtitle, add an unordered list your academic and 
+   professional goals.
+6. Under Courses Completed add an ordered list (with the default list type) 
+   with courses you've taken, are taking, or plan to take in the future.
+7. Under Hobbies, add an ordered list with list style set to "a" with at 
+   least 3 hobbies.
+8. Under Favorite Books, add an ordered list with list style set to "i" 
+   with at least 3 books.  
+9. In the aside, add a link to your github repository under the 
+   subtitle "Code Examples".
+10. Add an unordered list of organizations that you belong to under the 
+    subtitle "Organizations".
+11. In the footer, center align your email address.
+12. The background should be set to "teal" for the body. The background for 
+    any content sections: main, aside, header, footer should be set to "white".
+-->
+
+
+<html>
+    <head>
+        <title>[YourName]</title>
+        <style>
+        body { font-family: Arial, Helvetica, sans-serif; }
+        .title { color: teal;
+                vertical-align:middle }
+        .subtitle { font-size: 1.4em; color: orange; font-weight: bold; }
+        //.asidetitle { font-size: 1.4em; color: #999999; }
+        //.footer { font-weight: bold; }
+        footer 
+            {
+            clear: both;
+            border-top: 2px solid black;
+            padding-top: .7em; }
+            footer p {
+            font-size: 80%;
+            text-align: right;
+            font-weight: bold;
+            margin-right: 20px;
+            text-align:center;} 
+        header { 
+            color: teal;
+            font-size: 26px;
+            font-weight:bold;
+            height: 77px;
+            background-color: white;
+            width: 96.875%;
+            padding: 15px 1.5625%;
+            border-bottom: 2px solid black;
+        }
+
+        header img {
+        float: left;
+        margin-left: 20px; }   
+
+        header h2{
+          margin-left: 120px; 
+          margin-bottom:.25em; 
+        }
+        
+     .asidetitle{
+        width: 350px;
+        float:right;
+        padding:30px;
+        background-color: white;
+        margin-right: 0px;
+        font-size: 1.4em; 
+        color: #999999;
+        margin-bottom: .Sem; 
+        margin-left:10px; } 
+  
+li{
+  font-weight:bold;
+}
+
+#sidebarA {
+iwidth: 180px;
+Sidebar B
+height: 350px; /* to give the sidebar some height for its border */
+float: left;
+border-right: 2px solid #ef9c00; } 
+
+#sidebarB {
+iwidth: 180px;
+height: 350px; /* to give the sidebar some height for its border */
+float: right;
+border-left: 2px solid #ef9c00; } 
+
+aside li { font-size: .875em; }           
+
+        </style>
+    </head>
+       <body>
+      <header>
+        <img src="triceratopslogo.jpeg" alt="Tri-C logo" width="100">
+      <span class="title">Steve's Major Information Page</span> 
+      </header>
+          <main>
+              <aside class="asidetitle">
+              
+                  <nav>
+                    <h1>Code Examples</h1>
+                    <ul>
+                      <li><a href="http://blog.example.com/">Example Blog</a>
+                    </ul>
+                    </nav>
+                    <nav>
+                    <h2>Organizations</h2>
+                    <ol reversed>
+                      <li><a href="/last-post">My last post</a>
+                      <li><a href="/first-post">My first post</a>
+                    </ol>
+                    </nav>
+              </aside>
+            <section>
+            <br>
+                <p class="subtitle">Objectives</p>
+              <ul>
+              <li> Finish Highschool and get my diploma</li>
+              <li> Go to College, and get Bachelors degree in CS</li>
+              <li> Also Find an Internship or part-time job in college</li>
+              </ul>
+                <p class="subtitle">Course completed (or currently enrolled in):</p>
+                <ol>
+                <li>IT 1025</li>
+                <li>IT 1050</li>
+                <li>Intro to C#</li>
+                </ol> 
+                <p class="subtitle">Hobbies:</p>
+                  <ol type="a">
+                    <li> Tennis</li>
+                    <li> basketball</li>
+                    <li> Trumpet</li>
+                  </ol>  
+                <p class="subtitle">Favorite Books:</p>
+                <ol type="I">
+                   <li> The Lightning Thief</li>
+                    <li> Papertowns</li>
+                    <li> Narnia</li>
+                  </ol>
+                </section>
+        </main>
+        <footer>
+      <p>&copy; Copyright 2021 22scharles@nrapps.org</p>
+      </footer> 
+    </body>
+</html>
